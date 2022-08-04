@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Dream Travel </title>
+        <link rel="stylesheet" type="text/css" href="Dream travel home page.css">
+        <!-- <script src="Dream travel home page.js"></script> -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     
+    </head>
+    <body>
+        <header id="header">
+            <a href="#" class="logo">Dream-Travel</a>
+            <ul>
+                
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="Signup.html">Sign up</a></li>
+                </ul>      
+        </header>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section>
+            <h2 id="text"><span>It's time for a next</span><br>Adventure</h2> 
+            <img src="bird1.png" id="bird1">
+            <img src="bird2.png" id="bird2">
+            <img src="forest.png" id="forest">
+            <img src="rocks.png" id="rocks">
+            <img src="water.png" id="water">
+
+
+
+        </section>
+
+        <div class="sec">
+          <h1>The Dream Travel is a website.<br><br> The main purpose of Dream travel is to provide 
+            a convenient way for customer to book a seat of bus for tour purpose Tourist 
+            can find their tour palces according to their choices</h1>
+        </div>
+        
+
+
+       
+
+       
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+     
+
+      <footer>
+        <div class="footer-content">
+            <h2>Dream-Travel</h2>
+            <p>Take only memory,Leave foot print</p>
+             <ul class="icons">
+              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+             <li><a href="#"> <i class="fab fa-instagram-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        
+            </ul>     
+        </div>
+        <div class="footer-boottom">
+            <p>Copyright &copy;2021 Dream-Travel. designed by <span>sushmit</span> </p>
+        </div>
+      </footer>
+
+    
+      
+
+ <script>
+ let text = document.getElementById('text'); 
+  let bird1 = document.getElementById('bird1');
+  let bird2 = document.getElementById('bird2');
+  let forest = document.getElementById('forest');
+  let rocks = document.getElementById('rocks');
+  let water = document.getElementById('water');
+  let header = document.getElementById('header');
+
+  window.addEventListener('scroll', function(){
+    let value = window.scrolly;
+    text.style.top = 50 + value * -0.5 + '%';
+   bird1.style.top = value * -1.5 + 'px';
+   bird1.style.left = value * 2 + 'px';
+   bird2.style.top = value * -1.5 + 'px';
+   bird2.style.left = value * -5 + 'px';
+   rocks.style.top = value * -0.12 + 'px';
+   forest.style.top = value * 0.25 + 'px';
+   header.style.top = value * 0.5 + 'px';
+   })
+
+  
+   
+
+   
+
+  
+  
+</script> 
+          
+     
+</body>
+</html>

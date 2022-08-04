@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=poopins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+
+/* Header start */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    overflow-x: hidden  ;   
+    background: #fff;
+    /* min-height: 100vh; */
+}
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+}
+
+#header .logo{
+    background: linear-gradient(to right, #f32170 ,   #2196f3 ,#ff00eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ; 
+     font-weight: 700;
+    font-size: 5vh;
+    font-family: 'Rancho', cursive;
+}
+
+#header ul{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 1.2rem;
+    font-weight: 200;
+    position: relative;
+    left: -10%;
+}
+#header ul li{
+
+    list-style: none;
+    margin-left: 10px;
+}
+
+#header  ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: red;
+    border-radius: 20px;
+}
+#header ul li a:hover{
+    background: red;
+    color: #fff;  
+}
+
+/* header end */
+
+/* middle main start */
+.container{
+    width: 1280px;
+    min-height: 50px;
+    background: #fff;
+    margin: 150 auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    left: 10%;
+    width: 500px;
+    height: 400px;
+    background: rgb(17, 17, 1);
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.container .box .imgBox img{
+    max-width: 107%;
+    transition: transform 2s;
+    
+
+}
+
+.container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+
+
+
+
+
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .1s;
+}
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .details .content h2{
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px;
+    color: #ff0;
+}
+.container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0%;
+    font-size: 20px;
+   
+
+}
+
+
+
+
+
+/* main finish */
+
+
+/* footer start */
+footer{
+    position:relative;
+    top: 10% ;
+     background: gray;
+     height: auto;
+     width: 100%;
+     font-family:  'Stint Ultra Condensed', cursive;
+     padding-top: 40px;
+     color: whitesmoke;
+ }
+ .footer-content{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+ }
+ .footer-content h2{
+     font-size: 1.8rem;
+     font-weight: 400;
+     text-transform: capitalize;
+     line-height: 3rem;
+ } 
+ .footer-content p{
+     max-width: 500px;
+     margin: 10px auto;
+     line-height: 28px;
+     font-size: 14px;
+ }
+ 
+ .icons{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 0 3rem 0;
+ }
+ 
+ .icons li{
+     margin: 0 10px;
+ }
+ .icons a{
+     text-decoration: none;
+     color: whitesmoke;
+ }
+ .icons a i{
+     font-size: 1.1rem;
+     transition: color 1s ease;
+ }
+ 
+ .icons a:hover i {
+     color: turquoise;
+ }
+ .footer-bottom{
+     background: gray;
+     width: 100%;
+     padding: 20px 0;
+     text-align: center;
+ }
+ 
+ .footer-bottom p{
+     font-size: 14px;
+     word-spacing: 2px;
+     text-transform: capitalize;
+     text-align: center;
+ }
+ 
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+/* footer finish */
