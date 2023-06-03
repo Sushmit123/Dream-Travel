@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=poopins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+     overflow-x: hidden  ;  
+    background: #fff;
+    min-height: 100vh;
+}
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#header .logo{
+    background: linear-gradient(to right, #f32170 ,   #2196f3 ,#ff00eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ; 
+     font-weight: 700;
+    font-size: 2rem;
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#header ul li{
+
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #f32170;
+    border-radius: 20px;
+}
+
+#header ul li a:hover
+{
+    background: red;
+    color: #fff;
+}
+
+ section{
+     /* position: relative;  */
+    width: 100%; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+section #text{
+    position: absolute;
+    color:#f32170 ;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+   
+}
+ 
+
+section #text span{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+
+}
+
+ 

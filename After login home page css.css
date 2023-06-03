@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=poopins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Header start */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+      overflow-x: hidden  ;   
+    background: #fff;
+    min-height: 100vh;
+}
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+}
+
+#header .logo{
+    background: linear-gradient(to right, #f32170 ,   #2196f3 ,#ff00eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ; 
+     font-weight: 700;
+    font-size: 5vh;
+    font-family: 'Rancho', cursive;
+}
+
+#header ul{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 1.2rem;
+    font-weight: 200;
+    position: relative;
+    left: -10%;
+    font-family: 'Rancho', cursive;
+}
+#header ul li{
+
+    list-style: none;
+    /* margin-left: 10px; */
+}
+
+#header  ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: red;
+    border-radius: 20px;
+}
+#header ul li a:hover{
+    background: red;
+    color: #fff;  
+}
+
+
+
+/* header end */
+
+/* middle start */
+
+section{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #094b65,transparent);
+    z-index: 10;
+}
+
+
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+section #text{
+    position: absolute;
+    top: 20%;
+    color: red;
+    font-size: 10vh;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    z-index: 20;
+   
+}
+ 
+
+section #text span{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+
+}
+
+
+.sec{
+    
+    padding: 390px;
+    background:  #094b65;
+    
+   
+
+}
+.sec h1{
+    font-size: 1.8rem;
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 5%;
+}
+
+/* login */
+ 
+.right-menu{
+	position: relative;
+	display: inline-block;
+	float: left;
+    border-radius: 20px;
+}
+ .dropdown-menu{
+	display: none;
+	position: absolute;
+    top: 130%;
+	background-color: #f9f9f9;
+	min-width: 120px;
+	z-index: 1;
+}
+ .dropdown-menu a:hover{
+	background-color: gray;
+	color: rgb(26, 3, 3);
+
+}
+.right-menu:hover .dropdown-menu{
+	display: block;
+}
+.right-menu:hover .menu-button{
+	background-color: transparent;
+}
+
+#signup .a:hover{
+    background: red;
+    color: #fff;  
+
+}
+
+/* login end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* middle end */
+
+
+
+
+
+/* footer start */
+footer{
+   position:absolute;
+   top: 227% ;
+   left: -0%;
+    background: gray;
+    height: auto;
+    width: 100%;
+    font-family:  'Stint Ultra Condensed', cursive;
+    padding-top: 40px;
+    color: whitesmoke;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h2{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+} 
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.icons{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.icons li{
+    margin: 0 10px;
+}
+.icons a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.icons a i{
+    font-size: 1.1rem;
+    transition: color 1s ease;
+}
+
+.icons a:hover i {
+    color: turquoise;
+}
+.footer-bottom{
+    background: gray;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* .one{
+    margin: 2px 0 4px 0; 
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+   
+   
+    
